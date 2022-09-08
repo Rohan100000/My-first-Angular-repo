@@ -1,3 +1,32 @@
 .color{
     color: red;
 }
+.operators{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    align-content:space-around;
+}
+#calculator{
+    text-align: center;
+    border-style: groove;
+    border-color: black;
+    box-shadow: 0 0 25px red;
+    width: 50vw;
+    height: 40vh;
+    margin-top: 25vh;
+    margin-left: 25vw;
+    padding: 10px;
+    background: linear-gradient(rgb(0, 229, 255),rgb(13, 8, 122));
+}
+.operator-buttons{
+    margin: 10px;
+    background-color: rgb(0, 229, 255);
+    border-radius: 5px;
+    border-width: 2px;
+    border-color: aqua;
+    font-size: x-large;
+    width: 40px;
+}

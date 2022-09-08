@@ -1,15 +1,32 @@
 <!--variable binding -->
-<h1 class="color">{{title}}</h1>
+<!-- <h1 class="color">{{title}}</h1>
 <h1>{{count}}</h1>
-<h1 *ngIf="count > 0">I am visible if I am greater than 0</h1>
+<h1 *ngIf="count > 0">I am visible if I am greater than 0</h1> -->
+
 <!-- onclick event -->
-<button (click)="decreaseCount()">Decrement</button>
-<button (click)="increaseCount()">Increment</button>
+<!-- <button (click)="decreaseCount()">Decrement</button>
+<button (click)="increaseCount()">Increment</button> -->
+
 <!-- ngFor is used here to implement for loop and display all the numbers in the app.component.ts file -->
-<li *ngFor="let number of listOfNumbers">{{number}}</li> 
+<!-- <li *ngFor="let number of listOfNumbers">{{number}}</li> 
 <h1>Create an array of strings and display it in a list</h1>
 <ol>
   <li *ngFor="let name of listOfNames">{{name}}</li>
-</ol>
+</ol> -->
+
 <!-- 2 way binding -->
-<input type="text" [(ngModel)]="title">
+<!-- <input type="text" [(ngModel)]="title">
+<br> -->
+<div id="calculator">
+  <h1>My calculator</h1>
+  <input type="number" [(ngModel)]="num1">
+  <input type="number" [(ngModel)]="num2">
+  <h2>Answer: {{value}}</h2>
+  <h4>Select an operator</h4>
+  <div class="operators">
+    <button (click)="addNumbers()" class="operator-buttons">+</button>
+    <button (click)="subtractNumbers()" class="operator-buttons">-</button>
+    <button (click)="multiplyNumbers()" class="operator-buttons">*</button>
+    <button (click)="divideNumbers()" class="operator-buttons">/</button>
+  </div>
+</div>
