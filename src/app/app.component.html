@@ -1,3 +1,15 @@
+<!--variable binding -->
 <h1 class="color">{{title}}</h1>
 <h1>{{count}}</h1>
 <h1 *ngIf="count > 0">I am visible if I am greater than 0</h1>
+<!-- onclick event -->
+<button (click)="decreaseCount()">Decrement</button>
+<button (click)="increaseCount()">Increment</button>
+<!-- ngFor is used here to implement for loop and display all the numbers in the app.component.ts file -->
+<li *ngFor="let number of listOfNumbers">{{number}}</li> 
+<h1>Create an array of strings and display it in a list</h1>
+<ol>
+  <li *ngFor="let name of listOfNames">{{name}}</li>
+</ol>
+<!-- 2 way binding -->
+<input type="text" [(ngModel)]="title">
