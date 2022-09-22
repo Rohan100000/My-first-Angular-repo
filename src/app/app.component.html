@@ -17,7 +17,7 @@
 <!-- 2 way binding -->
 <!-- <input type="text" [(ngModel)]="title">
 <br> -->
-<div id="calculator">
+<!-- <div id="calculator">
   <h1>My calculator</h1>
   <input type="number" [(ngModel)]="num1">
   <input type="number" [(ngModel)]="num2">
@@ -29,4 +29,15 @@
     <button (click)="multiplyNumbers()" class="operator-buttons">*</button>
     <button (click)="divideNumbers()" class="operator-buttons">/</button>
   </div>
-</div>
+</div> -->
+
+<!-- <h1>Todo List App</h1>
+
+<input type="text" [(ngModel)] = "todoItem">
+<p>{{todoItem}}</p>
+<button (click)="addToTodoList()">Add to Todo List</button>
+
+<li *ngFor="let myTodoItem of todoList">{{myTodoItem}}</li> -->
+
+<app-todo></app-todo>
+<app-joke></app-joke>
