@@ -11,7 +11,11 @@ import { TodoAddComponent } from './todo/todo-add/todo-add.component';
 import { TodoListComponent } from './todo/todo-list/todo-list.component';
 import { JokeComponent } from './joke/joke.component';
 import { HttpClientModule } from '@angular/common/http';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSliderModule } from '@angular/material/slider';
+import { MatBadgeModule } from '@angular/material/badge';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -24,10 +28,15 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    MatSliderModule,
+    MatBadgeModule,
+    MatToolbarModule,
+    MatIconModule,
 
   //adding an import module
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
